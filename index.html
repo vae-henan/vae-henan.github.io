@@ -9,6 +9,28 @@
             padding: 0;
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column; /* Ensure elements are in a column */
+            align-items: center;
+            background: linear-gradient(to bottom right, #ccffcc, #609356);
+            font-family: Arial, sans-serif;
+            word-wrap: break-word; /* Enable word wrapping */
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Ensure divs are in a column */
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            margin-top: 20px; /* Add top margin */
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            white-space: pre-wrap; /* Ensure text wraps correctly */
+            font-family: 'Courier New', Courier, monospace; /* Change font family */
         }
         img {
             width: 100%;
@@ -16,10 +38,32 @@
             object-fit: cover;
             display: block;
         }
+        #map_canvas {
+            width: 100%;
+            display: block; /* Ensure map_canvas is a block element */
+        }
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            body {
+                font-size: 1.5em; /* Adjust font size for smaller screens */
+            }
+        }
+        /* Media query for very small screens */
+        @media (max-width: 400px) {
+            body {
+                font-size: 2em; /* Further adjust font size for very small screens */
+            }
+        }
     </style>
 </head>
 <body>
-<!--豫见许嵩遇见你，欢迎来到许嵩“呼吸之野巡回演唱会—郑州站”。豫最佳歌手许嵩一起，同呼同吸一起野！-->
-<img src="GeekCard.png" alt="GeekCard">
+<div id="map_canvas">
+    <img src="2301723992235.jpg" alt="Image" class="full-width">
+</div>
+<div class="container">
+    <div>豫见许嵩遇见你，河南后援在这里！</div>
+    <div>欢迎来到许嵩“呼吸之野巡回演唱会—郑州站”。</div>
+    <div>和最佳歌手许嵩一起，同呼同吸一起野！</div>
+</div>
 </body>
 </html>
