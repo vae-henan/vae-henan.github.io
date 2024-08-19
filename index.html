@@ -31,7 +31,28 @@
             text-align: center;
             white-space: pre-wrap; /* Ensure text wraps correctly */
             font-family: 'Courier New', Courier, monospace; /* Change font family */
-            font-size: 2em;
+            font-size: 1.5em; /* Default font size */
+        }
+
+        /* Media query for medium screens */
+        @media (max-width: 1200px) {
+            .container {
+                font-size: 1.25em; /* Adjust font size for medium screens */
+            }
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            .container {
+                font-size: 1em; /* Adjust font size for small screens */
+            }
+        }
+
+        /* Media query for very small screens */
+        @media (max-width: 400px) {
+            .container {
+                font-size: 0.75em; /* Further adjust font size for very small screens */
+            }
         }
         img {
             width: 100%;
@@ -59,7 +80,7 @@
 </head>
 <body>
 <div id="map_canvas">
-    <img src="2301723992236.jpg" alt="Image" class="full-width">
+    <img src="2301723992235.big.jpg" alt="Image" class="full-width">
 </div>
 <div class="container">
     <div>豫见许嵩遇见你，河南后援在这里！</div>
